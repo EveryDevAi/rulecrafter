@@ -1,0 +1,49 @@
+{
+  "name": "rulecrafter",
+  "version": "1.0.0",
+  "description": "Adaptive automation system that learns from your Claude Code workflow and generates intelligent rules and commands",
+  "main": "src/cli.js",
+  "bin": {
+    "rulecrafter": "./src/cli.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "echo \"No build step required\"",
+    "dev": "node src/cli.js",
+    "link": "npm link"
+  },
+  "keywords": [
+    "claude-code",
+    "ai",
+    "automation",
+    "development-tools",
+    "pattern-learning",
+    "adaptive-rules",
+    "slash-commands"
+  ],
+  "author": "RuleCrafter Contributors",
+  "license": "MIT",
+  "packageManager": "pnpm@10.6.4",
+  "dependencies": {
+    "commander": "^11.0.0"
+  },
+  "devDependencies": {},
+  "files": [
+    "src/",
+    "templates/",
+    "README.md",
+    "BUILD.md"
+  ],
+  "engines": {
+    "node": ">=14.0.0",
+    "python": ">=3.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/rulecrafter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/rulecrafter/issues"
+  },
+  "homepage": "https://github.com/your-username/rulecrafter#readme"
+}

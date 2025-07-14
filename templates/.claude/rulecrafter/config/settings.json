@@ -1,0 +1,79 @@
+{
+  "version": "1.0.0",
+  "rulecrafter": {
+    "enabled": true,
+    "auto_approve_threshold": 0.9,
+    "pattern_analysis_frequency": 10,
+    "error_threshold": 3,
+    "command_threshold": 5,
+    "confidence_threshold": 0.7,
+    "max_pending_rules": 20,
+    "max_auto_commands": 10,
+    "exclude_patterns": [
+      "node_modules/**",
+      ".git/**",
+      "*.log",
+      "*.tmp"
+    ],
+    "command_categories": {
+      "testing": {
+        "enabled": true,
+        "priority": "high"
+      },
+      "debugging": {
+        "enabled": true,
+        "priority": "high"
+      },
+      "refactoring": {
+        "enabled": true,
+        "priority": "medium"
+      },
+      "git": {
+        "enabled": true,
+        "priority": "medium"
+      },
+      "typescript": {
+        "enabled": true,
+        "priority": "high"
+      },
+      "python": {
+        "enabled": true,
+        "priority": "high"
+      }
+    },
+    "notifications": {
+      "new_rules": true,
+      "new_commands": true,
+      "analysis_complete": true,
+      "errors": true
+    },
+    "learning": {
+      "track_commands": true,
+      "track_errors": true,
+      "track_file_patterns": true,
+      "track_git_patterns": true,
+      "track_conversations": true
+    }
+  },
+  "hooks": {
+    "pre_tool": {
+      "enabled": true,
+      "script": "./hooks/pre_tool_analyzer.sh"
+    },
+    "post_tool": {
+      "enabled": true,
+      "script": "./hooks/post_tool_learner.sh"
+    },
+    "session_end": {
+      "enabled": true,
+      "script": "./hooks/session_compact.sh"
+    }
+  },
+  "storage": {
+    "patterns_file": "./storage/patterns.json",
+    "pending_rules_file": "./storage/pending_rules.json",
+    "session_logs_dir": "./storage/sessions",
+    "max_session_logs": 100,
+    "cleanup_after_days": 7
+  }
+}

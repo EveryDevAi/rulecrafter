@@ -117,4 +117,7 @@ test-*
 dist/
 build/
 lib/
+
+# Assets (keep images in repo for README)
+# assets/ - commented out to keep logo images
 tmp/

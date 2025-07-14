@@ -1,3 +1,5 @@
+![RuleCrafter](assets/rulecrafter-logo.png)
+
 # RuleCrafter
 
 🧠 **Adaptive automation system that learns from your development workflow and generates intelligent rules and commands**

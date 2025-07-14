@@ -1,6 +1,6 @@
 {
   "name": "rulecrafter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Adaptive automation system that learns from your Claude Code workflow and generates intelligent rules and commands",
   "main": "src/cli.js",
   "bin": {

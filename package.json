@@ -40,10 +40,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-username/rulecrafter.git"
+    "url": "https://github.com/EveryDevAi/rulecrafter.git"
   },
   "bugs": {
-    "url": "https://github.com/your-username/rulecrafter/issues"
+    "url": "https://github.com/EveryDevAi/rulecrafter/issues"
   },
-  "homepage": "https://github.com/your-username/rulecrafter#readme"
+  "homepage": "https://github.com/EveryDevAi/rulecrafter#readme"
 }
